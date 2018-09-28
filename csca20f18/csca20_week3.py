@@ -1,4 +1,6 @@
-CSCA20 WEEK3
+CSCA20 Week 3 Notes
+
+Objectives: 
 1. Pratice working with variables
 2. Pratice defining functions in editors
 3. Pratice writing boolean expressions and conditional statements
@@ -45,9 +47,9 @@ def function_name(parameters):
     Args:
         input variable
         
-    Returns:
-        output
-    """
+    #Returns:
+        #output
+    #"""
     code
 
 Example (lecture):
@@ -171,7 +173,6 @@ def cuboid_category(h, w, l):
        category of the cuboid: positive integer
      
     """
-                        
 
 
     
