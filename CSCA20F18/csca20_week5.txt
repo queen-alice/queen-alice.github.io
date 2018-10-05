@@ -1,0 +1,57 @@
+# example (a) loop item by item 
+def reverse_version_1(s):
+    '''
+    Take an input string s and return a string with the characters in s reversed
+    
+    Testing cases: 
+    >>> reverse_version_1('albion')
+    >>> 'noibla'
+    
+    >>> reverse_version_1('alice')
+    >>> 'ecila'
+    '''
+    result = ''
+    for char in s:
+        result = char + result 
+    return result
+
+# example(b) loop over the index of the string
+def reverse_version_2(s):
+    '''
+    Take an input string s and return a string with the characters in s reversed
+    
+    Testing cases: 
+    >>> reverse_version_2('albion')
+    >>> 'noibla'
+    
+    >>> reverse_version_2('alice')
+    >>> 'ecila'
+    '''
+    result = ''
+    for index in range(len(s) - 1, -1, -1):
+        result = result + s[index]
+    return result
+
+# example of looping a list
+def max_version_1(s):
+    '''
+    Take an input list of integeter and return the maximum number
+    of the list
+    >>> max_version_1([200, -50, 250, 250, 2])
+    250
+    '''
+    max = s[0]
+    for integer in s:
+        if max <= integer:
+            max = integer
+    return max
+
+# example of using a built-in function max() of list
+def max_version_2(s):
+    '''
+    Take an input list of integeter and return the maximum number
+    of the list
+    >>> max_version_2([200, -50, 250, 250, 2])
+    >>> 250
+    '''
+    return max(s)
