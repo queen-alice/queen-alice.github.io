@@ -1,0 +1,34 @@
+#CSCA20 Week 7 Notes
+#Objectives:
+    #1. Pratice with more loops
+    #2. Pratice using debugger
+    #3. Doctest Module
+
+def palindrome_check(s):
+    '''
+    A palindrome is a word that reads the same backward or forward.
+    The function will return True if the string s is a palindrome.
+    False otherwise.
+    Args: s is a given string
+    Returns: True if s is a palindrome, False otherwise
+    >>> palindrome_check('civic')
+    True
+    >>> palindrome_check('level')
+    True
+    >>> palindrome_check('a')
+    True
+    >>> palindrome_check('redder')
+    True
+    >>> palindrome_check('ace')
+    False
+    >>> palindrome_check('embrace')
+    False
+    '''
+    start = 0
+    end = len(s) - 1
+    while(start <= end):
+        if (s[start] != s[end]):
+            return False
+        start = start + 1 
+        end = end - 1
+    return True
