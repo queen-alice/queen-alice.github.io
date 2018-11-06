@@ -1,0 +1,45 @@
+name_to_age = {'Alice': 35, 'Dharmik': 42, 'Kara': 21, 'David': 56, 'Venkat': 7}
+# note that we don't necessarily print in order
+print("How do you print the entire dictionary? ", name_to_age)
+
+# name_to_age[1]
+
+print("How do you get the age of Alice? Alice is:", name_to_age['Alice'])
+
+#print("Helen is:", name_to_age['Helen'])
+print("Is Helen in the dictionary?" , 'Helen' in name_to_age)
+
+# another approach
+age = name_to_age.get('Ann')
+print("How do you get the age of Ann (a stranger)", age)
+age = name_to_age.get('Helen')
+print("How do you get the age of Helen (a stranger)", age)
+# we can specify a 2nd parameter for get, what to return if the first parameter
+# isn't in the dictionary
+age = name_to_age.get('Helen', 50)
+print("Since I don't know Helen's age, I guess it is ", age)
+
+# dictionaries are mutable
+name_to_age['Dharmik'] += 1
+print("Say happy birthday to Dharmik! ", name_to_age)
+
+# can we get rid of an entry?
+name_to_age['Kara'] = None
+print("How do I delete Kara from the dictionary? ", name_to_age)
+
+# we can use the del operator
+del name_to_age['Kara']
+print("Finally we can delete Kara", name_to_age)
+
+# loop over keys in a list
+for next_name in name_to_age:
+    # once again, note that
+    # we're not going in any specific order
+    print(next_name, " is ", name_to_age[next_name], " years old")
+
+# keys must be immutable types
+my_dict = {}
+# so this will work
+my_dict['x'] = ['a', 'b', 'c']
+# but this will crash
+# my_dict[['a', 'b', 'c']] = 'x'
