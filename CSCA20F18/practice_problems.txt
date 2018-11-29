@@ -1,0 +1,107 @@
+def add_lists(L1, L2):
+    '''(list, list) -> list
+    Return a new list whose values are the corresponding
+    values in L1 and L2 added together. Requirement: The 
+    lists are the same length.
+    >>> add_lists([1, 2, 3], [10, 20, 30])
+    [11, 22, 33]
+    >>> add_lists([2, 2, 2, 2], [4, 5, 6, 7])
+    [6, 7, 8, 9]
+    '''
+    result = []
+    for i in range(len(L1)):
+        result.append(L1[i]+L2[i])
+    return result
+
+
+def palindrome(S):
+    '''(str) -> bool
+    Return True if the given string is a palindrome and 
+    False otherwise.
+    >>> palindrome('kayak')
+    True
+    >>> palindrome('racecar')
+    True
+    >>> palindrome('Racecar')
+    False
+    '''
+    start = 0
+    end = len(s) - 1
+    while(start <= end):
+        if (s[start] != s[end]):
+            return False
+        start = start + 1 
+        end = end - 1
+    return True
+
+def count_hydrogen(molecule):
+    '''(str) -> int
+    Return the number of H atoms in the given molecule.
+    >>> count_hydrogen('H20')
+    2
+    >>> count_hydrogen('NaOH')
+    1
+    >>> count_hydrogen('He')
+    0
+    >>> count_hydrogen('CH3OH')
+    4
+    '''
+    result = 0
+
+    for i in range(len(molecule) - 1):
+        # if it is a hydrogen atom, you check if the char after the 'H'
+        if not (molecule[i] == "H" and (molecule[i+1]).isalpha()):
+            # if it is followed by a digit, add to result
+            if molecule[i] == "H" and molecule[i+1].isdigit():
+                result = result + molecule[i]
+    # If 'H' is at the end, add to the result         
+    if molecule[-1] == "H":
+        result = result + 1
+    return result
+
+
+def grab_names(L):
+    '''(list) -> list
+    Return a list containing all the fields from L that are names 
+    where a name is word that starts with a capital letter.
+    >>> grab_names(['Anna', 35, 'lecturer', 'Toronto', 'Canada'])
+    ['Anna', 'Toronto', 'Canada']
+    >>> grab_names([25, True, 'windy', 'sunny'])
+    []
+    '''
+    new_l = []
+    
+    for item in L:
+        if type(item) == str:
+            if item[0].isupper():
+                new_l.append(item)
+    return new_l
+
+# Modifies list1 and list2
+def interleave(list1, list2):
+    '''(list, list) -> list
+    Return a list that is the contents of list1 and list2 
+    interleaved. If one list is longer, add the remainder of the 
+    list to the end.
+    >>> interleave([1, 4, 7], [2, 5])
+    [1, 2, 4, 5, 7]
+    >>> interleave([2,3], [])
+    [2, 3]
+    >>> interleave([], [3, 5, 7])
+    [3, 5, 7]
+    >>> interleave([1], [2, 3, 4, 5])
+    [1, 2, 3, 4, 5]
+    '''
+    result = []
+    while (len(list1) !=0 and len(list2) != 0):
+        if list1[0] <= list2[0]:
+            item = list1.pop(0)
+        else:
+            item = list2.pop(0)
+        result.append(item)
+            
+    if len(list1) != 0:
+        result = result + list1
+    elif len(list2) != 0:
+        result = result + list2
+    return result
