@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Alice Zhou </title>
+  </head>
+  <body style="background-color:palevioletred; font-family:calibri;">
+    <h1 style="font-family:calibri;">Alice's Notes! </h1>
+    <br></br>
+  
+    <p> Click here to check my teaching notes. </p>
+    
+    <li><a href="MATB41S19">MATB41 2019 Summer Multivariable Calculus I</a></li>
+    <p>Tutorial 5: Wednesday 11 - 12 p.m. at SW319</p>
+    <p>Tutorial 5: Wednesday 12 - 1 p.m. at BV355</p>
+    <br></br>
+
+    <li><a href="MATB41F18">MATB41 2018 Fall Multivariable Calculus I</a></li>
+    <p>Tutorial 21: Friday 12 - 1 p.m. at HW408</p>
+    <p> Office Hour: Tuesday 11:30 a.m. - 12 p.m. at IC404 </p>
+    <br></br>
+
+    <li><a href="CSCA20F18">CSCA20 2018 Fall Introduction to Programming</a></li>
+    <p>Tutorial 5: Thursday 3 - 5 p.m. at BV498</p>
+    <p> Office Hour: Thursday 5:00 p.m. - 6 p.m. at IC400A or BV498(right after tutorial) </p>
+    <br></br>
+
+    <li><a href="STAB22F18">STAB22 2019 Winter Statistics I</a></li>
+    <p>Tutorial 12: Thursday 6 - 7 p.m. at MW223 </p>
+    <p> Office Hour: N/A </p>
+    <br></br>
+
+    <p>MATB42 2019 Winter Multivariable Calculus II</p>
+    <p>Tutorial 8: Friday 9 - 10 a.m. at IC328 </p>
+    <p>Tutorial 11: Friday 10 - 11 a.m. at IC328 </p>
+    <p> Office Hour: Friday 2 - 4 p.m. at IC404 </p>
+    <br></br>
+
+    <li><a href="SQL"> SQL Notes </a></li>
+    <p> References Used: Sam's Teach Yourself Microsoft SQL Server</p>
+    <p> Learning SQL by Alan Beaulieu </p>
+ </body> 
+</html>
